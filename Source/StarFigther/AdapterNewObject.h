@@ -10,6 +10,11 @@ UCLASS()
 class STARFIGTHER_API AAdapterNewObject : public AActor
 {
 	GENERATED_BODY()
+
+private:
+	UPROPERTY()
+		class ACountdown* Countdown;
+
 	
 public:	
 	// Sets default values for this actor's properties

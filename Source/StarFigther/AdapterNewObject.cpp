@@ -2,6 +2,7 @@
 
 
 #include "AdapterNewObject.h"
+#include "Countdown.h"
 
 // Sets default values
 AAdapterNewObject::AAdapterNewObject()
@@ -15,6 +16,11 @@ AAdapterNewObject::AAdapterNewObject()
 void AAdapterNewObject::BeginPlay()
 {
 	Super::BeginPlay();
+
+	//spawn countdown;
+	/*ACountdown *Countdown = GetWorld()->SpawnActor<ACountdown>(ACountdown::StaticClass());*/
+	Countdown = GetWorld()->SpawnActor<ACountdown>(ACountdown::StaticClass());
+
 	
 }
 
